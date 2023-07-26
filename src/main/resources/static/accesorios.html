@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CarShop</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link href="css/estilos.css" rel="stylesheet" type="text/css"/>
+        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="nav container">
+                <i class='bx bx-menu-alt-right' id="menu-icon"></i>
+                <a href="index.html" class="logo">Car <span>Shop</span></a>
+
+                <ul class="navbar">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="autos.html" >Autos</a></li>
+                    <li><a href="accesorios.html" class="activo">Accesorios</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="citas.html">Citas</a></li>
+                    <li><a href="login.html">Iniciar Sesion</a></li>
+                </ul>
+
+                <i class='bx bx-search-alt-2' id="buscar-icon" onclick="toggleSearchBox()"></i>
+
+                <div class="search-box container">
+                    <input type="Buscar" name="" id="" placeholder="Buscar autos">
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="catalogo" id="catalogo">
+                <h1>CATALOGO DE ACCESORIOS</h1>
+            </div>
+            <div class="catEstilo">
+                <h2>Aro Porche</h2>
+                <img src="imagenes/Aro.jpg" alt=""/ width="500" height="350"/><br>
+                <p>Aro Porche Fibra de Carbono</p><br>
+                <p>Precio:$1.500</p>
+                <p>-----------------------------------------------------</p>
+                <h2>Luz Led para Vehiculos</h2>
+                <img src="imagenes/Led.jpg" alt=""/><br>
+                <p>Focos Luces Led</p><br>
+                <p>Precio:$100</p><br>
+                <p>-----------------------------------------------------</p>
+                <h2>Cera Meguiars</h2>
+                <img src="imagenes/Cera.jpg" alt="" width="500" height="350"/><br>
+                <p>Cera pulidora de Carro</p><br>
+                <p>Precio:$25</p><br>
+
+            </div>
+        </section>
+
+        <script>
+            function toggleSearchBox() {
+                var searchBox = document.querySelector('.search-box');
+                searchBox.classList.toggle('activo');
+            }
+        </script>
+        <footer class="footer">CarShop &COPY; 2023 - Grupo 10</footer>
+</body>
+</html>
